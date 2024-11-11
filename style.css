@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Judson:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px;
+    background-color: #1d1414;
+}
+
+h2 {
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    font-family: 35px;
+}
+
+h2 img {
+    margin-left: 20px;
+}
+
+.addlist {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 2px 2px 10px black;
+    background-color: #fff;
+    padding-left: 20px;
+}
+
+#InputArea {
+    width: 100%;
+    flex: 1;
+    border: none;
+    outline: none;
+    background-color: white;
+    padding: 10px;
+    font-size: 14px;
+}
+
+#ADD {
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background-color: #442121;
+    color: white;
+    font-size: 17px;
+    border-radius: 30px;
+    box-shadow: 2px 2px 10px black;
+    cursor: pointer;
+}
+
+#ADD:hover {
+    background-color: #442121da;
+}
+
+.addtask {
+    width: 100%;
+    max-width: 800px;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    gap: 20px;
+    width: 100%;
+    max-height: 500px;
+    overflow: auto;
+}
+li{
+    width: 90%;
+    height: 10%;
+    background-color: white;
+    list-style: none;
+    padding: 12px 50px;
+    border-radius: 30px;
+    color:#1d1414;
+    font-size: 17px;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px black;
+    position: relative;
+}
+li::before{
+    position: absolute;
+    content: '';
+    width: 29px;
+    height: 29px;
+    background-image: url("circle.png");
+    background-size: cover;
+    left: 15px;
+    background-position: center;
+}
+.checked{
+    color: #555;
+    text-decoration: line-through;
+    background-color: #49e96c;
+}
+.checked::before{
+    background-image: url("checked.png");
+    width: 25px;
+    height: 25px;
+}
+li span{
+    position: absolute;
+    right: 10px;
+    top:8px;
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+    text-align: center;
+    border-radius: 50%;
+}
+/* li span:hover{
+    background-color: rgb(32, 22, 22)414;
+} */
